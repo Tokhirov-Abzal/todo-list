@@ -1,0 +1,129 @@
+.tasks {
+  &__title {
+    padding-bottom: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #64c4ed;
+
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  &__form {
+    margin-top: 50px;
+    &-new {
+      display: flex;
+      align-items: center;
+      opacity: 0.4;
+      cursor: pointer;
+      transition: opacity 0.2s linear;
+
+      .addBtn {
+        width: 16px;
+        height: 16px;
+      }
+
+      span {
+        font-size: 16px;
+        color: black;
+        margin-left: 20px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+
+      .miniContainer {
+        display: flex;
+      }
+    }
+  }
+
+  &__items {
+    margin-top: 30px;
+    align-items: center;
+
+    h2 {
+      margin-top: 150px;
+      text-align: center;
+      color: #c9d1d3;
+
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    input {
+      padding-left: 20px;
+      flex: 1;
+      border: none;
+    }
+
+    &--container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .checkbox {
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #e8e8e8;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      svg {
+        opacity: 0;
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+        svg {
+          opacity: 1;
+
+          path {
+            stroke: #b3b3b3;
+          }
+        }
+      }
+    }
+
+    input:checked + label {
+      background-color: #4dd599;
+      border-color: #4dd599;
+
+      svg {
+        opacity: 1;
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+}

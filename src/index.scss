@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+.field {
+  padding: 8px 11px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #efefef !important;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #a3a3a3;
+  }
+}
