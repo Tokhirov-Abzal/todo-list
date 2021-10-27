@@ -11,15 +11,15 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 750px;
-  height: 530px;
+  width: calc(100vw - 200px);
+  height: calc(100vh - 100px);
   transform: translate(-50%, -50%);
   box-shadow: 1px 2px 20px #f1f1f1;
   border-radius: 10px;
   font-size: 14px;
   &__sidebar {
     padding: 60px 20px;
-    width: 200px;
+    width: 300px;
     height: 100%;
     background-color: #f4f6f8;
     border-right: 1px solid #f1f1f1;
@@ -96,6 +96,7 @@
   &__tasks {
     padding: 60px;
     flex: 1;
+    overflow: auto;
   }
 }
 

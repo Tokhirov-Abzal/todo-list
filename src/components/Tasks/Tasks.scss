@@ -1,4 +1,8 @@
 .tasks {
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
   &__title {
     padding-bottom: 20px;
     font-family: "Montserrat";
@@ -60,7 +64,7 @@
       line-height: 39px;
     }
 
-    input {
+    p {
       padding-left: 20px;
       flex: 1;
       border: none;
@@ -68,7 +72,13 @@
 
     &--container {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 10px;
+
+      &:hover svg {
+        opacity: 0.8;
+      }
     }
   }
 
@@ -83,6 +93,8 @@
   }
 
   .checkbox {
+    display: flex;
+    align-items: center;
     input {
       display: none;
     }
@@ -126,4 +138,21 @@
       }
     }
   }
+}
+
+.tasks__items-row-actions {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: space-between;
+
+  svg {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
 }
